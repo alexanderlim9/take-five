@@ -1,0 +1,34 @@
+/* TAKEFIVE TEAL HEX CODE: #4ba5b7*/
+
+img {
+    margin-left: 10%;
+    width: 80%;
+    margin-right: 10%;
+}
+
+.splash {
+    margin-top: 30%;
+}
+
+body {
+    background: #FFEFA9;
+}
+
+p {
+    text-align: center;
+}
+
+label {
+    font-size: 40px;
+    font-weight: 600;
+    color: #4ba5b7;
+}
+
+input[type="text"] {
+    background-color: transparent;
+    width: 100%;
+}
+
+button {
+    color: #4ba5b7;
+}
