@@ -6,9 +6,23 @@ img {
     margin-right: 10%;
 }
 
-.splash {
-    margin-top: 30%;
+.splash-jumbo {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
+
+
+
+@media (max-width: 922px) {
+    button {
+        display: block;
+           margin-left: auto;
+    margin-right: auto;
+    }
+}
+
 
 body {
     background: #FFEFA9;
