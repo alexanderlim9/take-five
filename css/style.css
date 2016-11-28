@@ -32,3 +32,8 @@ input[type="text"] {
 button {
     color: #4ba5b7;
 }
+
+a {
+    color: #4ba5b7;
+    text-decoration: none;
+}

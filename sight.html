@@ -6,19 +6,31 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
+
     <div class="container">
         <div class="row">
             <img src="img/takefive_logo.png">
         </div>
         <div class="row">           
             <label>I see...</label>
-            <input type="text">
+            <input id="sense" type="text" placeholder="a bird, a plane...">
             <p>
-                <button>Submit</button>
+                <button onclick="addEntry()">Submit</button>
             </p>
+            <script>
+                var entries = [];
+                var userInput = document.getElementById("sense");
+                function addEntry() {
+                    entries.push(userInput.value);
+                    console.log(entries)
+                }
+            </script>
+<!--            <script type="text" src="js/script.js"></script>-->
         </div>
     </div>
+
 </body>
 </html>
