@@ -1,6 +1,12 @@
 
 function setName() {
+  var name = document.getElementById("nameInput").value;
+  if(name === "") {
+    Cookies.set('name', "Anonymous squirrel");
+  }
+  else {
     Cookies.set('name', document.getElementById("nameInput").value);
+  }
     console.log(Cookies.get('name'));
 }
 
