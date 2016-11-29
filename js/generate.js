@@ -1,7 +1,17 @@
-var entries = ['User saw: something fresh', 'User saw: something clean', 'User saw: something new'];
-var json_entries = JSON.stringify(entries);
 
-Cookies.set('entries', json_entries);
+function setName() {
+    Cookies.set('name', document.getElementById("nameInput").value);
+    console.log(Cookies.get('name'));
+}
 
-console.log(json_entries);
-console.log(Cookies.get('entries'));
+if(Cookies.get('first') === undefined) {
+  //setting the array
+  var entries = ['Kara: I taste... MINTY FRESHNESS', 'Alex: I taste... coffee!', 'Noah: I hear... Subway workers talking'];
+  var json_entries = JSON.stringify(entries);
+  console.log("reset");
+  Cookies.set('entries', json_entries);
+  console.log(json_entries);
+  console.log(Cookies.get('entries'));
+}
+
+Cookies.set('first', 'exist');
