@@ -6,22 +6,68 @@ img {
     margin-right: 10%;
 }
 
-.splash {
-    margin-top: 30%;
+.splash-jumbo {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
+@media (max-width: 922px) {
+    button {
+        display: block;
+           margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+/*BODY AND TEXT
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 body {
     background: #FFEFA9;
 }
 
 p {
     text-align: center;
+    color: #4ba5b7;
+
 }
 
+/*LISTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+li {
+    color: #4ba5b7;
+    margin-bottom: 0rem;
+}
+
+/*LINKS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a {
+    color: #4ba5b7;
+    text-decoration: none;
+}
+
+/*FORMS AND BUTTONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 label {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     color: #4ba5b7;
+}
+
+@media only screen and (max-width: 750px) {
+    label {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    label {
+        font-size: 20px;
+    }
 }
 
 input[type="text"] {
@@ -33,7 +79,9 @@ button {
     color: #4ba5b7;
 }
 
-a {
-    color: #4ba5b7;
-    text-decoration: none;
+/*MARGINS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.margin.fifty {
+    margin: 50px;
 }

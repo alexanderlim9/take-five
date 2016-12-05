@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/js.cookie.js"></script>
-    <script type="text/javascript" src="js/generate.js"></script>
+
 </head>
 <body>
     <div class="jumbotron splash-jumbo">
@@ -16,17 +16,13 @@
                 <img src="img/takefive_logo.png">
             </div>
             <div class="row">
-                <div class="six columns">
-                    <label id="nameLabel">What's your name?</label>
-                </div>
-                <div class="six columns">
-                    <input type="text" type="name" placeholder="Anonymous" id="nameInput">
-                </div>
-            </div>
-            <div class="row margin fifty">
                 <p>
-                    <a href="home.html"><button class="sense-go" onclick="setName()">Get Sensing</button></a>
+                <a href="home.html"> <button onclick="addEntry()">Sense some more?</button> </a>
                 </p>
+                <div id="results">
+                    <p> Results </p>
+                        <script type="text/javascript" src="js/results.js"></script>
+                </div>
             </div>
         </div>
     </div>
