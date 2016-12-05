@@ -58,14 +58,27 @@ label {
     color: #4ba5b7;
 }
 
+/*
 @media only screen and (max-width: 750px) {
     label {
         font-size: 25px;
     }
 }
+*/
 
+/*
 @media only screen and (max-width: 550px) {
     label {
+        font-size: 20px;
+    }
+}
+*/
+
+@media only screen 
+    and (min-width: 375px) 
+    and (max-width: 667px) {
+    label {
+        background-color: blue;
         font-size: 20px;
     }
 }
