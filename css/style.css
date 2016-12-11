@@ -33,6 +33,15 @@ p {
 
 }
 
+/* hide the verbs used for results */
+.verb {
+  display: none;
+}
+
+.senses {
+
+}
+
 /*LISTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -98,6 +107,3 @@ button {
     margin: 50px;
 }
 
-.senses {
-
-}
