@@ -98,6 +98,12 @@ input[type="text"] {
 
 button {
     color: #4ba5b7;
+    width: 150px;
+    text-align: center;
+}
+
+#senseMoreButton {
+    width: 200px;
 }
 
 /*MARGINS
