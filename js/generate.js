@@ -19,8 +19,9 @@ if(Cookies.get('first') === undefined) {
   var taste = ['Kara tasted "MINTY FRESHNESS"', 'Alex tasted "coffee!"', 'Joe tasted "morning breath"', 'Farrah tasted "coffee in my throat"', 'Chloe tasted "the rainbow"'];
   var touch = ['Bobo felt "chills"', 'Farrah felt "COLD"', 'Noah felt "a cool breeze on my skin"', 'Alex felt "a cold handrail"', 'John Kane felt  "an impressive process book"'];
   var smell = ['Trevor smelled "subway sandwiches"', 'Julie smelled "a cup of joe"', 'Molly smelled "FOOD!"', 'Jon smelled "microwave popcorn"', 'Alice smelled "finals week in the air"'];
-  
-  var entries = [sight, sound, taste, touch, smell];
+  var currentSense = "none";
+    
+  var entries = [sight, sound, taste, touch, smell, currentSense];
   
   var json_entries = JSON.stringify(entries);
   console.log("reset");

@@ -38,6 +38,10 @@ p {
   display: none;
 }
 
+.num {
+  display: none;
+}
+
 .senses {
 
 }
@@ -111,5 +115,18 @@ button {
 
 .margin.fifty {
     margin: 50px;
+}
+
+.submitMargin {
+    margin-top: 60px;
+}
+
+@media only screen 
+    and (min-width: 375px) 
+    and (max-width: 479px) {
+    .submitMargin {
+        margin-top: 100px;
+    }
+
 }
 

@@ -8,6 +8,7 @@ var verb = document.getElementsByClassName("verb")[0];
 
 function addSight(sense) {
     entries[0].push(Cookies.get('name') + " " + verb.textContent + " \"" + userInput.value + "\"");
+    entries[5] = "0";
     var json_entries = JSON.stringify(entries);
     Cookies.set('entries', json_entries);
     console.log(Cookies.get('entries'));
@@ -15,6 +16,7 @@ function addSight(sense) {
 
 function addSound(sense) {
     entries[1].push(Cookies.get('name') + " " + verb.textContent + " \"" + userInput.value + "\"");
+    entries[5] = "1";
     var json_entries = JSON.stringify(entries);
     Cookies.set('entries', json_entries);
     console.log(Cookies.get('entries'));
@@ -22,6 +24,7 @@ function addSound(sense) {
 
 function addTaste(sense) {
     entries[2].push(Cookies.get('name') + " " + verb.textContent + " \"" + userInput.value + "\"");
+    entries[5] = "2";
     var json_entries = JSON.stringify(entries);
     Cookies.set('entries', json_entries);
     console.log(Cookies.get('entries')[2]);
@@ -29,6 +32,7 @@ function addTaste(sense) {
 
 function addTouch(sense) {
     entries[3].push(Cookies.get('name') + " " + verb.textContent + " \"" + userInput.value + "\"");
+    entries[5] = "3";
     var json_entries = JSON.stringify(entries);
     Cookies.set('entries', json_entries);
     console.log(Cookies.get('entries'));
@@ -36,6 +40,7 @@ function addTouch(sense) {
 
 function addSmell(sense) {
     entries[4].push(Cookies.get('name') + " " + verb.textContent + " \"" + userInput.value + "\"");
+    entries[5] = "4";
     var json_entries = JSON.stringify(entries);
     Cookies.set('entries', json_entries);
     console.log(Cookies.get('entries'));
