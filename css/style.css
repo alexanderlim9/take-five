@@ -33,6 +33,19 @@ p {
 
 }
 
+/* hide the verbs used for results */
+.verb {
+  display: none;
+}
+
+.num {
+  display: none;
+}
+
+.senses {
+
+}
+
 /*LISTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -89,6 +102,12 @@ input[type="text"] {
 
 button {
     color: #4ba5b7;
+    width: 150px;
+    text-align: center;
+}
+
+#senseMoreButton {
+    width: 200px;
 }
 
 /*MARGINS
@@ -98,6 +117,16 @@ button {
     margin: 50px;
 }
 
-.senses {
+.submitMargin {
+    margin-top: 60px;
+}
+
+@media only screen 
+    and (min-width: 375px) 
+    and (max-width: 479px) {
+    .submitMargin {
+        margin-top: 100px;
+    }
 
 }
+
